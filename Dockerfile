@@ -1,5 +1,6 @@
 # Use the official Ruby image as the base image
-FROM ruby:3.2
+# FROM ruby:3.2
+FROM mcr.microsoft.com/devcontainers/universal:linux
 
 # Set the working directory inside the container
 WORKDIR /app
