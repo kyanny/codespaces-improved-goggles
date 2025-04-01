@@ -3,6 +3,8 @@ require 'redis'
 require_relative 'config/redis'
 
 class MyApp < Sinatra::Base
+  set :bind, '0.0.0.0' # Bind to all interfaces
+
   get '/' do
     'Hello, Sinatra with Redis!'
   end
